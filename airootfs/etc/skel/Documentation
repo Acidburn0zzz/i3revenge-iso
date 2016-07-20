@@ -1,0 +1,27 @@
+Thank you for trying i3revenge!
+
+**To install either to virtualbox or to hardware, run the following command in a terminal. This will provide a gui installer for the system.**
+
+sudo /abif-master/abif
+
+This project is Arch Linux with a customized i3 window manager experience. Instead of dmenu to launch applications, I have included rofi. Dmenu is still installed; however, so if you would rather use it simply change the i3 config file located at ~/.config/i3/config. Below is a list of common keybindings to help you get started with i3.
+
+The default $mod key is the "super"key (or windows key)
+
+$mod + enter = open terminal
+$mod + shift + t = open floating terminal
+$mod + d = open rofi to run an application
+$mod + shift + q = close the focused window
+$mod + number = move to the numbered workspace
+$mod + shift + number = move the focused window to the numbered workspace
+$mod + shift + e = exit i3
+
+The default shell is zsh rather than bash because, well, I just really like it. But, bash is obviously installed so if you would rather use bash as defalt simply change your default shell in a terminal. I have included several aliases in the .zshrc file that you may use for common commands. They are listed below:
+
+alias pac="sudo pacman -S"
+alias pacs="sudo pacman -Ss"
+alias pacu="sudo pacman -Syy"
+alias update="sudo pacman -Syu"
+
+This custom Arch Linux Spin is dedicated to the memory of the man who taught me how to do all of this. We never actually met, but he had a profound influence on me through his unique teaching style and motivation. I would have never accomplished this without you.
+Thank you, Midfingr. 
