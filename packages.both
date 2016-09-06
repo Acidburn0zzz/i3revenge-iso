@@ -65,6 +65,7 @@ dunst
 cups
 ghostscript
 gsfonts
+system-config-printer
 
 #AUR support
 yaourt

@@ -1483,17 +1483,12 @@ install_root(){
   # Fix NetworkManager
   arch_chroot "systemctl enable NetworkManager -f" 2>>/tmp/.errlog
 
-  # Fix Lightdm
-  arch_chroot "systemctl enable lightdm.service" 
-
   # Keyboard config for vc and x11
   [[ -e /tmp/vconsole.conf ]] && cp /tmp/vconsole.conf ${MOUNTPOINT}/etc/vconsole.conf 2>>/tmp/.errlog
   [[ -e /tmp/01-keyboard-layout.conf ]] && cp -f /tmp/01-keyboard-layout.conf ${MOUNTPOINT}/etc/X11/xorg.conf.d/$(ls ${MOUNTPOINT}/etc/X11/xorg.conf.d/ | grep "keyboard") 2>>/tmp/.errlog
   
   # Display Manager
-  arch_chroot "systemctl enable lxdm" 2>>/tmp/.errlog
-  cp -f /inst/lxdm.conf ${MOUNTPOINT}/etc/lxdm/lxdm.conf 2>>/tmp/.errlog
-  [[ -d ${MOUNTPOINT}/inst ]] && rm -R ${MOUNTPOINT}/inst &> /dev/null 2>>/tmp/.errlog
+  arch_chroot "systemctl enable lightdm.service" 2>>/tmp/.errlog
   check_for_error
   
   # Virtualbox Guest
