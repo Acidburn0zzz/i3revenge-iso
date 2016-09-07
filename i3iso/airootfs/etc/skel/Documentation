@@ -1,8 +1,8 @@
 Thank you for trying i3revenge!
 
-**To install either to virtualbox or to hardware, run the following command in a terminal. This will provide a gui installer for the system.**
+**To install either to virtualbox or to hardware, use the super key + d to search
+and type install i3revenge. Run the install application and follow the prompts**
 
-sudo /abif-master/abif
 
 This project is Arch Linux with a customized i3 window manager experience. Instead of dmenu to launch applications, I have included rofi. Dmenu is still installed; however, so if you would rather use it simply change the i3 config file located at ~/.config/i3/config. Below is a list of common keybindings to help you get started with i3.
 

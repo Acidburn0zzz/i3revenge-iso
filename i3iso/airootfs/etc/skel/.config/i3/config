@@ -30,7 +30,7 @@ font pango:ubuntu 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec termite
 bindsym $mod+Shift+t exec lxterminal
 bindsym $mod+Shift+h exec pcmanfm
 

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# This is a simple script to call the i3Revenge installer
+
+sudo lxterminal -e /abif-master/abif

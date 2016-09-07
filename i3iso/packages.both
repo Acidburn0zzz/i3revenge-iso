@@ -92,7 +92,7 @@ archlinux-wallpaper
 lxappearance
 feh
 cmatrix
-leafpad
+termite
 
 # themes
 numix-themes
